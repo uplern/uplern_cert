@@ -163,7 +163,7 @@ const DashboardPage = () => {
                 interns.map((intern) => (
                   <tr key={intern._id}>
                     <td>
-                       <div style={{ fontWeight: 600, color: '#0f172a' }}>{intern.fullName}</div>
+                       <div style={{ fontWeight: 600, color: '#ffffff' }}>{intern.fullName}</div>
                     </td>
                     <td>{intern.email}</td>
                     <td>
