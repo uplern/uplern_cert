@@ -1,5 +1,5 @@
-const TOKEN_KEY = "zyntiq_admin_token";
-const ADMIN_KEY = "zyntiq_admin_info";
+const TOKEN_KEY = "uplern_admin_token";
+const ADMIN_KEY = "uplern_admin_info";
 
 export const tokenStorage = {
   get() {

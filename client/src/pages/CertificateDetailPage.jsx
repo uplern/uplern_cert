@@ -14,7 +14,6 @@ const formatIssuedDate = (value) => {
   }
 };
 
-const PORTRAIT_TYPES = new Set(["bp", "ex"]);
 const TYPE_LABELS = {
   ap: "Appreciation",
   bl: "Best Leader",
@@ -27,12 +26,11 @@ const TYPE_LABELS = {
 };
 
 const CertMockup = ({ cert, recipientName }) => {
-  const isPortrait = PORTRAIT_TYPES.has(cert.type?.toLowerCase());
   const typeKey = cert.type?.toLowerCase();
   const displayType = TYPE_LABELS[typeKey] || cert.title;
 
   return (
-    <div className={`cert-mockup ${isPortrait ? "cert-mockup--portrait" : "cert-mockup--landscape"} cert-mockup--${typeKey}`}>
+    <div className={`cert-mockup cert-mockup--landscape cert-mockup--${typeKey}`}>
       <div className="cert-mockup__paper">
         <div className="cert-mockup__corner cert-mockup__corner--tl">❋</div>
         <div className="cert-mockup__corner cert-mockup__corner--tr">❋</div>
@@ -41,7 +39,7 @@ const CertMockup = ({ cert, recipientName }) => {
 
         <div className="cert-mockup__frame">
           <div className="cert-mockup__header">
-            <img src="/black.png" alt="Zyntiq" className="cert-mockup__logo" />
+            <img src="/black.png" alt="Uplern" className="cert-mockup__logo" />
             <div className="cert-mockup__header-divider" />
             <span className="cert-mockup__org">OFFICIAL CREDENTIAL</span>
           </div>
@@ -163,7 +161,7 @@ const CertificateDetailPage = () => {
       </div>
 
       <footer className="portal-footer">
-        <p>© {new Date().getFullYear()} Zyntiq · Official Secure Credential View</p>
+        <p>© {new Date().getFullYear()} Uplern · Official Secure Credential View</p>
       </footer>
     </div>
   );

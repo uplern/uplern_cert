@@ -1,8 +1,8 @@
-const url = "https://zyntiq-cert.vercel.app/api/admin/login";
+const url = "https://uplern-cert.vercel.app/api/admin/login";
 fetch(url, {
   method: "POST",
   headers: { "Content-Type": "application/json" },
-  body: JSON.stringify({ email: "admin@zyntiq.com", password: "Admin@12345" })
+  body: JSON.stringify({ email: "admin@uplern.com", password: "Admin@12345" })
 })
 .then(async res => {
   console.log("Status:", res.status);

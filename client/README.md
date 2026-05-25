@@ -1,4 +1,4 @@
-# Zyntiq Admin Panel (Phase 2)
+# Uplern Admin Panel (Phase 2)
 
 React admin UI for:
 

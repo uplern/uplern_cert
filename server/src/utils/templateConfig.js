@@ -22,83 +22,83 @@ const templateConfig = {
 
     AP: {
       file: "AP.pdf",
-      namePos: { x: 290, y: 310, size: 38, centered: false }, // X:8.75cm, Y:8.42cm
+      namePos: { x: 295, y: 300, size: 48, centered: false }, // X:8.75cm, Y:8.42cm
       titlePos: { x: 421, y: 220, size: 20, centered: true },
-      datePos: { x: 125, y: 39, size: 12, centered: false },  // X:4.4cm, Y:18.9cm
-      idPos: { x: 125, y: 15, size: 12, centered: false },    // Y extrapolated
-      qrPos: { x: 380, y: 100, size: 60 },                  // X:12.77cm, Y:14.89cm
+      datePos: { x: 300, y: 27, size: 12, centered: false },  // X:4.4cm, Y:18.9cm
+      idPos: { x: 475, y: 27, size: 12, centered: false },    // Y extrapolated
+      qrPos: { x: 380, y: 90, size: 60 },                  // X:12.77cm, Y:14.89cm
     },
 
     BL: {
       file: "BL.pdf",
-      namePos: { x: 70, y: 303, size: 45, centered: false },  // X:1.93cm, Y:8.12cm
+      namePos: { x: 300, y: 300, size: 45, centered: false },  // X:1.93cm, Y:8.12cm
       titlePos: { x: 421, y: 230, size: 20, centered: true },
-      datePos: { x: 315, y: 55, size: 12, centered: false },  // X:10.64cm, Y:18.36cm
-      idPos: { x: 315, y: 26, size: 12, centered: false },    // Y extrapolated
-      qrPos: { x: 500, y: 30, size: 70 },                  // X:16.95cm, Y:17.08cm
+      datePos: { x: 330, y: 50, size: 12, centered: false },  // X:10.64cm, Y:18.36cm
+      idPos: { x: 330, y: 21, size: 12, centered: false },    // Y extrapolated
+      qrPos: { x: 360, y: 100, size: 70 },                  // X:16.95cm, Y:17.08cm
     },
 
     CA: {
       file: "CA.pdf",
+      fontColor: { r: 1, g: 1, b: 1 },
       namePos: { x: 421, y: 290, size: 38, centered: true }, // Centered under 'awarded to'
-      datePos: { x: 650, y: 70, size: 11, centered: false }, // More right, higher than UID
-      idPos: { x: 650, y: 43, size: 11, centered: false },   // Aligned right with Date
-      qrPos: { x: 400, y: 45, size: 70 },                  // Adjusted horizontally
+      datePos: { x: 485, y: 27, size: 11, centered: false }, // More right, higher than UID
+      idPos: { x: 635, y: 27, size: 11, centered: false },   // Aligned right with Date
+      qrPos: { x: 230, y: 45, size: 70 },                  // Adjusted horizontally
     },
 
     // TA Templates (Landscape)
     TA_1: {
       file: "TA1.pdf",
-      namePos: { x: 250, y: 310, size: 38, centered: false },
+      namePos: { x: 110, y: 255, size: 38, centered: false },
       titlePos: { x: 421, y: 230, size: 20, centered: true },
-      datePos: { x: 705, y: 70, size: 12, centered: false },
-      idPos: { x: 705, y: 43, size: 12, centered: false },
-      qrPos: { x: 400, y: 45, size: 70 },
+      datePos: { x: 320, y: 71, size: 12, centered: false },
+      idPos: { x: 320, y: 41, size: 12, centered: false },
+      qrPos: { x: 500, y: 45, size: 70 },
     },
     TA_2: {
       file: "TA2.pdf",
-      namePos: { x: 250, y: 310, size: 38, centered: false },
+      namePos: { x: 110, y: 255, size: 38, centered: false },
       titlePos: { x: 421, y: 230, size: 20, centered: true },
-      datePos: { x: 705, y: 70, size: 12, centered: false },
-      idPos: { x: 705, y: 43, size: 12, centered: false },
-      qrPos: { x: 400, y: 45, size: 70 },
+      datePos: { x: 320, y: 71, size: 12, centered: false },
+      idPos: { x: 320, y: 41, size: 12, centered: false },
+      qrPos: { x: 500, y: 45, size: 70 },
     },
     TA_4: {
       file: "TA4.pdf",
-      namePos: { x: 250, y: 310, size: 38, centered: false },
+      namePos: { x: 110, y: 255, size: 38, centered: false },
       titlePos: { x: 421, y: 230, size: 20, centered: true },
-      datePos: { x: 705, y: 70, size: 12, centered: false },
-      idPos: { x: 705, y: 43, size: 12, centered: false },
-      qrPos: { x: 400, y: 45, size: 70 },
+      datePos: { x: 320, y: 71, size: 12, centered: false },
+      idPos: { x: 320, y: 41, size: 12, centered: false },
+      qrPos: { x: 500, y: 45, size: 70 },
     },
 
     // === PORTRAIT TEMPLATES (Height: 841.89) ===
 
     EX: {
       file: "EX.pdf",
-      isPortrait: true,
-      namePos: { x: 180, y: 500, size: 35, centered: false },   // X:1.96cm, Y:7.72cm
-      titlePos: { x: 298, y: 500, size: 20, centered: true },
-      datePos: { x: 463, y: 54, size: 12, centered: false },  // X:10.95cm, Y:19.06cm
-      idPos: { x: 463, y: 20, size: 12, centered: false },    // Y extrapolated
-      qrPos: { x: 430, y: 120, size: 30 },                    // X:10.15cm, Y:16.17cm
+      isPortrait: false,
+      namePos: { x: 430, y: 250, size: 45, centered: false },  // X:1.93cm, Y:8.12cm
+      titlePos: { x: 421, y: 230, size: 20, centered: true },
+      datePos: { x: 358, y: 12, size: 12, centered: false },  // X:10.64cm, Y:18.36cm
+      idPos: { x: 500, y: 12, size: 12, centered: false },    // Y extrapolated
+      qrPos: { x: 520, y: 50, size: 70 },                  // X:16.95cm, Y:17.08cm
     },
 
     BP: {
       file: "BP.pdf",
-      isPortrait: true,
-      fontColor: { r: 1, g: 1, b: 1 },
-      namePos: { x: 80, y: 460, size: 36, centered: false },    // X:0.17cm, Y:8.56cm
-      titlePos: { x: 294, y: 480, size: 20, centered: true },
-      datePos: { x: 118, y: 67, size: 12, centered: false },   // X:2.53cm, Y:18.75cm
-      idPos: { x: 118, y: 33, size: 12, centered: false },     // Y extrapolated
-      qrPos: { x: 300, y: 30, size: 50 },                    // X:7.52cm, Y:18.31cm
+      isPortrait: false,
+      namePos: { x: 185, y: 260, size: 45, centered: false },  // X:1.93cm, Y:8.12cm
+      titlePos: { x: 421, y: 230, size: 20, centered: true },
+      datePos: { x: 135, y: 19, size: 12, centered: false },  // X:10.64cm, Y:18.36cm
+      idPos: { x: 265, y: 19, size: 12, centered: false },    // Y extrapolated
+      qrPos: { x: 300 , y: 50, size: 70 },                  // X:16.95cm, Y:17.08cm
     },
   },
 
   default: {
     file: "EX.pdf",
-    isPortrait: true,
+    isPortrait: false,
     namePos: { x: 56, y: 623, size: 28, centered: false },
     titlePos: { x: 298, y: 500, size: 20, centered: true },
     datePos: { x: 310, y: 301, size: 12, centered: false },

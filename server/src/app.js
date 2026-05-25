@@ -1,6 +1,6 @@
 const express = require("express");
 const cors = require("cors");
-const adminRoutes = require("./routes/adminRoutes");
+// adminRoutes removed
 const internRoutes = require("./routes/internRoutes");
 const certificateRoutes = require("./routes/certificateRoutes");
 const errorHandler = require("./middlewares/errorHandler");
@@ -34,7 +34,7 @@ app.get("/health", (req, res) => {
   res.json({ status: "ok" });
 });
 
-app.use("/api/admin", adminRoutes);
+// app.use("/api/admin", adminRoutes) removed
 app.use("/api/interns", internRoutes);
 app.use("/api", certificateRoutes);
 

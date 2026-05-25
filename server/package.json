@@ -1,7 +1,7 @@
 {
-  "name": "zyntiq-certificate-server",
+  "name": "uplern-certificate-server",
   "version": "1.0.0",
-  "description": "Backend API for Zyntiq internship certificate system",
+  "description": "Backend API for Uplern internship certificate system",
   "main": "src/server.js",
   "type": "commonjs",
   "scripts": {

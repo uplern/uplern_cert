@@ -13,13 +13,13 @@ async function migrateData() {
     for (const intern of interns) {
       let modified = false;
 
-      // Update certificate IDs from UPLERN to ZYNTIQ
+      // Update certificate IDs from ZYNTIQ to UPLERN
       if (intern.certificates && intern.certificates.length > 0) {
         intern.certificates.forEach(cert => {
-          if (cert.certificateId && cert.certificateId.toUpperCase().includes("UPLERN")) {
-            // "UPLERN CA 000011" -> "ZYNTIQ-CA-000011"
+          if (cert.certificateId && cert.certificateId.toUpperCase().includes("ZYNTIQ")) {
+            // "ZYNTIQ-CA-000011" -> "UPLERN-CA-000011"
             cert.certificateId = cert.certificateId
-                                     .replace(/UPLERN/i, "ZYNTIQ")
+                                     .replace(/ZYNTIQ/i, "UPLERN")
                                      .replace(/ /g, "-");
             modified = true;
           }

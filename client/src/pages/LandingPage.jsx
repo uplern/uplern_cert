@@ -40,18 +40,10 @@ const LandingPage = () => {
       <div className="landing-container">
         <header className="landing-header">
           <div className="brand-logo">
-            <img src="/black.png" alt="Zyntiq" className="brand-img" />
+            <img src="/black.png" alt="Uplern" className="brand-img" />
             <div className="brand-divider"></div>
             <span className="brand-portal-label">Verification Portal</span>
           </div>
-          <nav className="landing-nav">
-            <Link className="admin-access-btn" to="/admin/login" title="Admin Portal">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-              </svg>
-              <span>Admin Login</span>
-            </Link>
-          </nav>
         </header>
 
         <main className="landing-main">
@@ -60,7 +52,7 @@ const LandingPage = () => {
               Secure Your <span className="text-gradient">Professional</span> Future
             </h1>
             <p className="hero-subtitle">
-              Verify authenticated credentials or retrieve your official Zyntiq internship certificates. A cryptographically secure archive for modern professionals.
+              Verify authenticated credentials or retrieve your official Uplern internship certificates. A cryptographically secure archive for modern professionals.
             </p>
             <div className="hero-actions">
               <button type="button" className="btn-hero-primary" onClick={() => setOpen(true)}>
@@ -117,7 +109,7 @@ const LandingPage = () => {
 
         <footer className="landing-footer">
           <div className="footer-line"></div>
-          <p>© 2026 Zyntiq · Secure Verification Portal · All credentials cryptographically signed</p>
+          <p>© 2026 Uplern · Secure Verification Portal · All credentials cryptographically signed</p>
         </footer>
       </div>
       <CertificateLookupModal open={open} onClose={() => setOpen(false)} onSubmit={submitLookup} loading={loading} />

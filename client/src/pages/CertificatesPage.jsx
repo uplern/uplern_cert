@@ -14,9 +14,6 @@ const formatIssuedDate = (value) => {
   }
 };
 
-// Portrait types (BP & EX use portrait orientation in templates)
-const PORTRAIT_TYPES = new Set(["bp", "ex"]);
-
 // Map cert type to a short display label
 const TYPE_LABELS = {
   ap: "Appreciation",
@@ -30,12 +27,11 @@ const TYPE_LABELS = {
 };
 
 const CertMockup = ({ cert, recipientName }) => {
-  const isPortrait = PORTRAIT_TYPES.has(cert.type?.toLowerCase());
   const typeKey = cert.type?.toLowerCase();
   const displayType = TYPE_LABELS[typeKey] || cert.title;
 
   return (
-    <div className={`cert-mockup ${isPortrait ? "cert-mockup--portrait" : "cert-mockup--landscape"} cert-mockup--${typeKey}`}>
+    <div className={`cert-mockup cert-mockup--landscape cert-mockup--${typeKey}`}>
       <div className="cert-mockup__paper">
         {/* Corner ornaments */}
         <div className="cert-mockup__corner cert-mockup__corner--tl">❋</div>
@@ -47,7 +43,7 @@ const CertMockup = ({ cert, recipientName }) => {
         <div className="cert-mockup__frame">
           {/* Header */}
           <div className="cert-mockup__header">
-            <img src="/black.png" alt="Zyntiq" className="cert-mockup__logo" />
+            <img src="/black.png" alt="Uplern" className="cert-mockup__logo" />
             <div className="cert-mockup__header-divider" />
             <span className="cert-mockup__org">OFFICIAL CREDENTIAL</span>
           </div>
@@ -178,7 +174,7 @@ const CertificatesPage = () => {
         <div className="portal-profile-section">
           <div className="portal-nav-row-integrated" style={{ justifyContent: "space-between" }}>
             <Link to="/" className="brand-logo" style={{ textDecoration: "none" }}>
-              <img src="/black.png" alt="Zyntiq" className="brand-img" style={{ height: "30px" }} />
+              <img src="/black.png" alt="Uplern" className="brand-img" style={{ height: "30px" }} />
               <div className="brand-divider" style={{ height: "16px" }}></div>
               <span className="brand-portal-label" style={{ fontSize: "0.8rem", color: "#64748b" }}>Verification Portal</span>
             </Link>
@@ -271,7 +267,7 @@ const CertificatesPage = () => {
       </div>
 
       <footer className="portal-footer">
-        <p>© {new Date().getFullYear()} Zyntiq · All credentials are cryptographically verified and tamper-proof</p>
+        <p>© {new Date().getFullYear()} Uplern · All credentials are cryptographically verified and tamper-proof</p>
       </footer>
     </div>
   );

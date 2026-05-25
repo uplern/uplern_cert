@@ -1,6 +1,9 @@
-
 const app = require("../server/src/app");
 const connectDB = require("../server/src/config/db");
+
+if (process.env.NODE_ENV !== "production") {
+  require("dotenv").config({ path: require("path").resolve(__dirname, "../server/.env") });
+}
 
 // Vercel Serverless Function entry point
 module.exports = async (req, res) => {

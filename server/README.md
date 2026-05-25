@@ -1,4 +1,4 @@
-# Zyntiq Certificate Backend (Phase 1)
+# Uplern Certificate Backend (Phase 1)
 
 Express + MongoDB Atlas backend for:
 
@@ -30,7 +30,7 @@ Update `.env` values:
 ## 2. Create Admin
 
 ```bash
-npm run create:admin -- admin@zyntiq.com strongpassword123  Admin@12345
+npm run create:admin -- admin@uplern.com strongpassword123  Admin@12345
 ```
 
 ## 3. Run
@@ -55,7 +55,7 @@ Body:
 
 ```json
 {
-  "email": "admin@zyntiq.com",
+  "email": "admin@uplern.com",
   "password": "strongpassword123"
 }
 ```

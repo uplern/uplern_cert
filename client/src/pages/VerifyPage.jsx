@@ -50,7 +50,7 @@ const VerifyPage = () => {
       <div className="landing-container">
         <header className="landing-header">
           <div className="brand-logo">
-            <img src="/black.png" alt="Zyntiq" className="brand-img" />
+            <img src="/black.png" alt="Uplern" className="brand-img" />
             <div className="brand-divider"></div>
             <span className="brand-portal-label">Verification Portal</span>
           </div>
@@ -113,7 +113,7 @@ const VerifyPage = () => {
 
                   <div className="v-info-item">
                     <label className="v-info-label">Issuer</label>
-                    <div className="v-info-value">Zyntiq Official</div>
+                    <div className="v-info-value">Uplern Official</div>
                   </div>
                 </div>
 
@@ -140,7 +140,7 @@ const VerifyPage = () => {
         </main>
 
         <footer className="landing-footer" style={{ padding: '2rem 0' }}>
-           <p>© 2026 Zyntiq · Official Verification Portal · Cryptographically Signed</p>
+           <p>© 2026 Uplern · Official Verification Portal · Cryptographically Signed</p>
         </footer>
       </div>
     </div>

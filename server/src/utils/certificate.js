@@ -4,7 +4,7 @@ const Counter = require("../models/Counter");
 const buildCertificateId = ({ type, sequence }) => {
   const normalizedType = String(type || "").toUpperCase();
   const seq = String(sequence).padStart(6, "0");
-  return `ZYNTIQ-${normalizedType}-${seq}`;
+  return `UPLERN-${normalizedType}-${seq}`;
 };
 
 const nextCertificateSequence = async () => {
