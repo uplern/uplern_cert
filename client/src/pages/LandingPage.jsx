@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import CertificateLookupModal from "../components/CertificateLookupModal";
 import { certificateApi } from "../api/certificateApi";
 
@@ -46,12 +46,6 @@ const LandingPage = () => {
             <span className="brand-dot-plus">+</span>
           </div>
 
-          <nav className="nav-links">
-            <span className="nav-item active">VERIFICATION</span>
-            <span className="nav-item">ARCHIVE</span>
-            <span className="nav-item">RECORDS</span>
-            <span className="nav-item">SECURITY</span>
-          </nav>
 
           <div className="nav-actions">
             <button type="button" className="btn-editorial-pill" onClick={() => setOpen(true)}>
@@ -61,10 +55,8 @@ const LandingPage = () => {
               <span>GET CERTIFICATE</span>
             </button>
 
-            <Link to="/login" className="admin-toggle-switch" title="Admin Portal">
-              <span className="switch-knob"></span>
-            </Link>
           </div>
+
         </header>
 
         {/* Hero Section */}

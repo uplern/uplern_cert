@@ -1456,6 +1456,228 @@ th {
 }
 
 /* =============================================
+   LANDING PAGE — MOBILE RESPONSIVE
+   ============================================= */
+
+/* Tablet: ≤ 1024px */
+@media (max-width: 1024px) {
+  .editorial-container {
+    padding: 0 1.75rem;
+  }
+
+  .editorial-main {
+    grid-template-columns: 60px 1fr 1fr;
+    gap: 1rem;
+    padding: 2.5rem 0 4rem;
+  }
+
+  .editorial-visual-container {
+    height: 480px;
+  }
+
+  .orange-ellipse-canvas {
+    width: 300px;
+    height: 380px;
+  }
+
+  .editorial-cert-ticket {
+    width: 300px;
+    height: 185px;
+    right: 10px;
+  }
+}
+
+/* Mobile: ≤ 768px */
+@media (max-width: 768px) {
+  /* Nav */
+  .editorial-nav {
+    height: auto;
+    padding: 1.25rem 0;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+
+  .editorial-logo {
+    height: 28px;
+  }
+
+  .btn-editorial-pill span:last-child {
+    display: none;
+  }
+
+  .btn-editorial-pill {
+    padding: 0.5rem;
+    border-radius: 50%;
+    gap: 0;
+  }
+
+  .pill-icon-ticket {
+    width: 30px;
+    height: 30px;
+  }
+
+  /* Container */
+  .editorial-container {
+    padding: 0 1.25rem;
+  }
+
+  /* Hero: stack vertically */
+  .editorial-main {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    padding: 2rem 0 3rem;
+    gap: 2rem;
+  }
+
+  /* Hide vertical side tag on mobile */
+  .editorial-side-tag {
+    display: none;
+  }
+
+  .editorial-hero-text {
+    padding-left: 0;
+    text-align: center;
+    order: 1;
+  }
+
+  .hero-giant-title {
+    font-size: clamp(2.8rem, 10vw, 3.8rem);
+    margin-bottom: 1.25rem;
+  }
+
+  .hero-editorial-sub {
+    font-size: 1rem;
+    margin: 0 auto 2.5rem;
+    max-width: 100%;
+  }
+
+  .editorial-action-row {
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+
+  .editorial-date-range {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+
+  .date-line {
+    width: 40px;
+  }
+
+  /* Visual graphic */
+  .editorial-visual-container {
+    height: 340px;
+    order: 2;
+    width: 100%;
+  }
+
+  .orange-ellipse-canvas {
+    width: 230px;
+    height: 290px;
+  }
+
+  .editorial-cert-ticket {
+    width: 260px;
+    height: 160px;
+    right: 0;
+    bottom: -10px;
+    transform: rotate(-4deg);
+  }
+
+  @keyframes ticketFloat {
+    0%, 100% { transform: rotate(-4deg) translateY(0); }
+    50% { transform: rotate(-4deg) translateY(-10px); }
+  }
+
+  .rotated-text-ring {
+    display: none;
+  }
+
+  .wireframe-accent-grid {
+    display: none;
+  }
+
+  /* Accreditation section */
+  .accreditation-section {
+    padding: 3rem 0 4rem;
+  }
+
+  .accreditation-header {
+    margin-bottom: 2.5rem;
+    padding: 0 0.5rem;
+  }
+
+  .accreditation-stories-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  /* Footer */
+  .editorial-footer {
+    padding: 2rem 0;
+  }
+
+  .editorial-footer p {
+    font-size: 0.78rem;
+    padding: 0 1rem;
+  }
+}
+
+/* Small mobile: ≤ 480px */
+@media (max-width: 480px) {
+  .editorial-container {
+    padding: 0 1rem;
+  }
+
+  .hero-giant-title {
+    font-size: clamp(2.2rem, 11vw, 2.8rem);
+  }
+
+  .editorial-visual-container {
+    height: 280px;
+  }
+
+  .orange-ellipse-canvas {
+    width: 180px;
+    height: 230px;
+  }
+
+  .editorial-cert-ticket {
+    width: 220px;
+    height: 138px;
+    right: 0;
+  }
+
+  .ticket-title-bold {
+    font-size: 1.1rem;
+  }
+
+  .ticket-main-content {
+    padding: 1rem;
+  }
+
+  .btn-editorial-hero {
+    padding: 0.65rem 1.35rem 0.65rem 0.65rem;
+    font-size: 0.78rem;
+  }
+
+  .play-triangle {
+    width: 30px;
+    height: 30px;
+    font-size: 0.6rem;
+  }
+
+  .story-card {
+    padding: 1.75rem 1.5rem;
+  }
+
+  .acc-title {
+    font-size: clamp(1.4rem, 6vw, 1.8rem);
+  }
+}
+/* =============================================
    REFINED VERIFY PAGE (Professional Edition)
    ============================================= */
 
