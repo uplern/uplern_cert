@@ -173,10 +173,9 @@ const CertificatesPage = () => {
       {!loading && !error && (
         <div className="portal-profile-section">
           <div className="portal-nav-row-integrated" style={{ justifyContent: "space-between" }}>
-            <Link to="/" className="brand-logo" style={{ textDecoration: "none" }}>
-              <img src="/black.png" alt="Uplern" className="brand-img" style={{ height: "30px" }} />
-              <div className="brand-divider" style={{ height: "16px" }}></div>
-              <span className="brand-portal-label" style={{ fontSize: "0.8rem", color: "#64748b" }}>Verification Portal</span>
+            <Link to="/" className="nav-brand" style={{ textDecoration: "none" }}>
+              <img src="/black.png" alt="Uplern" className="editorial-logo" style={{ height: "32px" }} />
+              <span className="brand-dot-plus">+</span>
             </Link>
             <Link to="/" className="portal-back-btn" title="New Search">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">

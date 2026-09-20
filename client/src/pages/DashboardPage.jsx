@@ -163,9 +163,9 @@ const DashboardPage = () => {
                 interns.map((intern) => (
                   <tr key={intern._id}>
                     <td>
-                       <div style={{ fontWeight: 600, color: '#ffffff' }}>{intern.fullName}</div>
+                       <div style={{ fontWeight: 800, color: '#111111' }}>{intern.fullName}</div>
                     </td>
-                    <td>{intern.email}</td>
+                    <td style={{ color: '#555555', fontWeight: 500 }}>{intern.email}</td>
                     <td>
                       <div className="chips">
                         {intern.certificates?.length ? (
@@ -175,16 +175,16 @@ const DashboardPage = () => {
                             </span>
                           ))
                         ) : (
-                          <span className="muted" style={{ fontSize: '0.8rem' }}>None issued</span>
+                          <span className="muted" style={{ fontSize: '0.8rem', color: '#888888' }}>None issued</span>
                         )}
                       </div>
                     </td>
-                    <td style={{ textAlign: 'right' }}>
-                      <div className="action-row" style={{ justifyContent: 'flex-end' }}>
-                        <button type="button" className="btn btn-outline" onClick={() => openEditModal(intern)} style={{ padding: '0.4rem 0.8rem', fontSize: '0.85rem' }}>
+                    <td style={{ textAlign: 'right', whiteSpace: 'nowrap' }}>
+                      <div className="action-row" style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'flex-end', gap: '0.5rem' }}>
+                        <button type="button" className="btn-table-action btn-table-edit" onClick={() => openEditModal(intern)}>
                           Edit
                         </button>
-                        <button type="button" className="btn btn-danger" onClick={() => handleDelete(intern)} style={{ padding: '0.4rem 0.8rem', fontSize: '0.85rem', background: '#fee2e2', color: '#dc2626', border: '1px solid #fecaca' }}>
+                        <button type="button" className="btn-table-action btn-table-delete" onClick={() => handleDelete(intern)}>
                           Delete
                         </button>
                       </div>
