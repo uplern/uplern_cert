@@ -6,7 +6,8 @@ const CERT_TYPES = {
   ap: "Appreciation",
   ca: "Campus Ambassador",
   bl: "Best Leader",
-  bp: "Best Performer"
+  bp: "Best Performer",
+  ac: "Achievement"
 };
 
 const CERT_TYPE_KEYS = Object.keys(CERT_TYPES);

@@ -20,6 +20,14 @@ const templateConfig = {
   templates: {
     // === LANDSCAPE TEMPLATES (Height: 595.28) ===
 
+    AC: {
+      file: "AC.pdf",
+      namePos: { x: 316, y: 305, size: 40, centered: true },
+      datePos: { x: 185, y: 27, size: 11, centered: false },
+      idPos: { x: 363, y: 27, size: 11, centered: false },
+      qrPos: { x: 280, y: 80, size: 65 },
+    },
+
     AP: {
       file: "AP.pdf",
       namePos: { x: 295, y: 300, size: 48, centered: false }, // X:8.75cm, Y:8.42cm

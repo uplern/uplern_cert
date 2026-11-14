@@ -16,6 +16,7 @@ const formatIssuedDate = (value) => {
 
 // Map cert type to a short display label
 const TYPE_LABELS = {
+  ac: "Achievement",
   ap: "Appreciation",
   bl: "Best Leader",
   bp: "Best Performer",

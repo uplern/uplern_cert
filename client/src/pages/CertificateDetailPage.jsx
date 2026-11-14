@@ -15,6 +15,7 @@ const formatIssuedDate = (value) => {
 };
 
 const TYPE_LABELS = {
+  ac: "Achievement",
   ap: "Appreciation",
   bl: "Best Leader",
   bp: "Best Performer",
